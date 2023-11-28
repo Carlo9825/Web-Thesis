@@ -148,7 +148,9 @@ footer{
 
 	}
 
-	#dashboard1{
+	.pwbpanel{
 		display: none;
+		width:100%;
+		height: 100%;
 
 		}

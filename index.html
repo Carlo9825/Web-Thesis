@@ -44,18 +44,21 @@
 		<div id="canvas">
 
 			<aside>
-				<button id="btn1" class="btn_aside" onclick="show()"> Bibliografia Cesimento </button>
+				<button id="btn1" class="btn_aside" onclick="active_canvas('dashboard1')"> Bibliografia Cesimento </button>
 				<button class="btn_aside"> Nuvola di punti </button>
 				<button class="btn_aside"> Ispezioni </button>
 				<button class="btn_aside">  Modello Architettnico </button>
-				<button class="btn_aside"> Modello Strutturale </button>
+				<button class="btn_aside" onclick="active_canvas('dashboard2')"> Modello Strutturale </button>
 				<button class="btn_aside"> Risultati </button>
 			
 			
 			</aside>
 		
-			<content>
+			<content id="contnt">
 				<iframe id="dashboard1" title="Report Section"class="pwbpanel"  src=https://app.powerbi.com/view?r=eyJrIjoiMjU2ZGQ2MGQtNDdiZC00ODBmLTk2ZDEtMzVhMTZmMjQwMTc1IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9 frameborder="0" allowFullScreen="true"></iframe>
+
+
+				<iframe  id="dashboard2"title="Strutturale"  class="pwbpanel" src="https://app.powerbi.com/view?r=eyJrIjoiMjkzMWFjM2QtMjkxYS00YmVjLWE0NzctZjc2NmExOTBhYTJmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 			</content>
 			<div id="images_container">
