@@ -45,20 +45,35 @@
 
 			<aside>
 				<button id="btn1" class="btn_aside" onclick="active_canvas('dashboard1')"> Bibliografia Cesimento </button>
-				<button class="btn_aside"> Nuvola di punti </button>
-				<button class="btn_aside"> Ispezioni </button>
-				<button class="btn_aside">  Modello Architettnico </button>
-				<button class="btn_aside" onclick="active_canvas('dashboard2')"> Modello Strutturale </button>
-				<button class="btn_aside"> Risultati </button>
+				<a id ="nuvola" href="https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam"class="btn_aside" target="_blank"> Nuvola di punti </a>
+				<!-- <button class="btn_aside"onclick="active_canvas('container1')"> Nuvola di punti </button> -->
+				<button class="btn_aside"onclick="active_canvas('container2')"> Ispezioni </button>
+				<button class="btn_aside"onclick="active_canvas('container3')">  Modello Architettnico </button>
+				<button class="btn_aside"onclick="active_canvas('container4')"> Modello Strutturale </button>
+				<button class="btn_aside"onclick="active_canvas('container5')"> Risultati </button>
 			
 			
 			</aside>
 		
-			<content id="contnt">
-				<iframe id="dashboard1" title="Report Section"class="pwbpanel"  src=https://app.powerbi.com/view?r=eyJrIjoiMjU2ZGQ2MGQtNDdiZC00ODBmLTk2ZDEtMzVhMTZmMjQwMTc1IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9 frameborder="0" allowFullScreen="true"></iframe>
+			<content id="contnt"> 
+				<iframe id="dashboard1" title="Report Section"class="pannello"  src=https://app.powerbi.com/view?r=eyJrIjoiMjU2ZGQ2MGQtNDdiZC00ODBmLTk2ZDEtMzVhMTZmMjQwMTc1IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9 frameborder="0" allowFullScreen="true"></iframe>
+				<div id="container1" class="pannello">
+					<a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank">PIANO</a>
+					
+				</div>
+				<div id="container2"class="pannello">
+					
+				</div>
+				<div id="container3"class="pannello">
+					<h1>Questo es una proba</h1>
 
-
-				<iframe  id="dashboard2"title="Strutturale"  class="pwbpanel" src="https://app.powerbi.com/view?r=eyJrIjoiMjkzMWFjM2QtMjkxYS00YmVjLWE0NzctZjc2NmExOTBhYTJmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				</div>
+				
+				<iframe id="container4"  title="Report Section" class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiY2E3ZDNiYzQtNThjNy00YzI4LTkzYzQtMTYzMTBiYzk0MDBmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>	
+				
+				<div id="container5"class="pannello">
+					
+				</div>
 
 			</content>
 			<div id="images_container">
@@ -79,7 +94,7 @@
 			<div id="name">
 			<h2 id="titolo"> Carlo Ciardella M56001025
 			</h2>
-			<img class="logo_inv"src="img/ministero.png"> 
+			<img class="logo_inv1"src="img/ministero.png"> 
 			
 		</footer>
 		<script src="scripts.js"></script>
