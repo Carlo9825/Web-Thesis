@@ -202,7 +202,7 @@ footer{
 
 
 #aside2{
-	background: red;
+	background: white;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -214,7 +214,7 @@ footer{
 
 
 #body2{
-	background: blue;
+	background: white;
 	height: 100%;
 	
 
