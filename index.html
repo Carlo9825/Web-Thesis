@@ -44,36 +44,102 @@
 		<div id="canvas">
 
 			<aside>
-				<button id="btn1" class="btn_aside" onclick="active_canvas('dashboard1')"> Bibliografia Cesimento </button>
-				<a id ="nuvola" href="https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam"class="btn_aside" target="_blank"> Nuvola di punti </a>
-				<!-- <button class="btn_aside"onclick="active_canvas('container1')"> Nuvola di punti </button> -->
-				<button class="btn_aside"onclick="active_canvas('container2')"> Ispezioni </button>
-				<button class="btn_aside"onclick="active_canvas('container3')">  Modello Architettnico </button>
-				<button class="btn_aside"onclick="active_canvas('container4')"> Modello Strutturale </button>
-				<button class="btn_aside"onclick="active_canvas('container5')"> Risultati </button>
+				<button id="btn1" class="btn_aside" onclick="active_canvas('bibliography')"> Bibliography </button>
+				<button class="btn_aside"onclick="active_canvas('cloudofpoints')"> Cloud of Points </button>
+				<button class="btn_aside"onclick="active_canvas('inspections')"> Inspections </button>
+				<button class="btn_aside"onclick="active_canvas('architectural')">  Architectural Model  </button>
+				<button class="btn_aside"onclick="active_canvas('structural')"> Structural Model </button>
+				<button class="btn_aside"onclick="active_canvas('results')"> Final Results </button>
 			
 			
 			</aside>
 		
 			<content id="contnt"> 
-				<iframe id="dashboard1" title="Report Section"class="pannello"  src=https://app.powerbi.com/view?r=eyJrIjoiMjU2ZGQ2MGQtNDdiZC00ODBmLTk2ZDEtMzVhMTZmMjQwMTc1IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9 frameborder="0" allowFullScreen="true"></iframe>
-				<div id="container1" class="pannello">
-					<a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank">PIANO</a>
+				
+				<div id="bibliography" class="pannello"> 
+
+				</div>
+					
+				 
+				<div id="cloudofpoints"class="pannello">
 					
 				</div>
-				<div id="container2"class="pannello">
-					
-				</div>
-				<div id="container3"class="pannello">
-					<h1>Questo es una proba</h1>
+
+
+
+				<div id="inspections"class="pannello">
+					<div id="aside2">
+						<button id="btn_aux1" class="btn_aux" onclick="active_aux('supports')"> Supports</button>
+						<button id="btn_aux2" class="btn_aux"onclick="active_aux('movementjoint')"> Movement Joint</button>
+
+     					<button id="btn_aux3" class="btn_aux"onclick="active_aux('slab')"> Slab/Road Surface</button>
+
+						<button id="btn_aux4" class="btn_aux"onclick="active_aux('appoggi')"> Abutments</button>
+	
+						<button id="btn_aux5" class="btn_aux"onclick="active_aux('appoggi')"> Beams</button>
+
+						<button id="btn_aux6" class="btn_aux"onclick="active_aux('appoggi')">Traverses</button>
+
+						<button id="btn_aux7" class="btn_aux"><a href="img\ISPEZIONI\schede di difettosità.pdf" target="_blank">Schede di Difettosità</a></button>
+
+
+						
+						</div>
+					<div id="body2">
+
+						<div id="supports" class="body2"> 
+							<div class="foto_container">
+								<img  class="immagini "src="img/ISPEZIONI/Appoggi/Appoggi ad Attrito.jpg">
+							</div>
+							<div class="foto_button">
+								<button class ="btn_arrows">back</button>
+								<button class ="btn_arrows">forward</button>
+							</div>
+							
+							
+						</div>
+
+						<div id="movementjoint" class="body2"> 
+							<div class="foto_container">
+								hola
+							</div>
+							<div class="foto_button">
+								adios
+							</div>
+						</div>
+						<div id="slab" class="body2"> 
+							<div class="foto_container">
+								hola
+							</div>
+							<div class="foto_button">
+								adios
+							</div>
+						</div>
+						
+
+
+
+
+
+
+					</div>
 
 				</div>
 				
-				<iframe id="container4"  title="Report Section" class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiY2E3ZDNiYzQtNThjNy00YzI4LTkzYzQtMTYzMTBiYzk0MDBmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>	
 				
-				<div id="container5"class="pannello">
+				
+				<div id="architettonico"class="pannello">
 					
 				</div>
+
+				<div id="strutturale"class="pannello">
+					
+				</div>
+
+				<div id="risultati"class="pannello">
+					
+				</div>
+
 
 			</content>
 			<div id="images_container">
@@ -91,10 +157,10 @@
 
 		<footer>
 
-			<div id="name">
+			
 			<h2 id="titolo"> Carlo Ciardella M56001025
 			</h2>
-			<img class="logo_inv1"src="img/ministero.png"> 
+			<!-- <img class="logo_inv1"src="img/ministero.png">  -->
 			
 		</footer>
 		<script src="scripts.js"></script>
