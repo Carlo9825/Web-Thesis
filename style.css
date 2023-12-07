@@ -142,9 +142,12 @@ content{
 
 
 footer{ 
-		background: blue;
+		 
 		height: 4vh;
 		width: 100%;
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
 
 	}
 	
@@ -167,15 +170,8 @@ footer{
 		}
 
 
-	#bibliography{
+	
 
-	background-color: green;
-	}
-
-
-	#cloudofpoints{
-		background-color: greenyellow;
-	}
 
 
 	#inspections{
@@ -295,4 +291,107 @@ footer{
 
 		}
 
+
+.logo_inv1{
+	height:4vh;
+	aspect-ratio: 4/1;
+	margin-right: 5px;
+	position:relative;
+	top: 4px;
+}
+
+
+
+
+	#bibliography, #cloudofpoints{
+	grid-template-columns: 10% 1fr;
+
+
+	}
+
+
+
+
+
+
+
+.aside_secondary{
+	background: white;
+	width: 98%;
+	height: 97%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	}
+
+
+.btn_aux{
+	width: 90%;
+	height: 10%;
+	background-color: #ADFF2F;
 	
+	color: darkgreen;
+	font-weight: bolder;
+
+}
+
+.btn_type_a{
+	text-decoration: none;
+	color:darkgreen;
+
+}
+
+
+.btn_aux:hover{
+	background-color: darkgreen;
+	color: white;
+}
+
+.btn_type_a:hover{
+	text-decoration: none;
+	color:white;
+
+}
+
+
+.body_secondary{
+	 
+	display: grid;
+	place-items: center;
+	width: 95%;
+	height: 98%;
+	margin: 4px;
+	border-radius: 15px;
+
+	}
+
+
+.body_third{
+	display: grid;
+	place-items: center;
+	grid-template-rows: 80% 1fr;
+
+	}
+
+
+.foto_container{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+
+
+	}
+
+.foto_button{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+
+	}

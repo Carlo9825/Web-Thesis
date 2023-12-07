@@ -47,9 +47,9 @@
 				<button id="btn1" class="btn_aside" onclick="active_canvas('bibliography')"> Bibliography </button>
 				<button class="btn_aside"onclick="active_canvas('cloudofpoints')"> Cloud of Points </button>
 				<button class="btn_aside"onclick="active_canvas('inspections')"> Inspections </button>
-				<button class="btn_aside"onclick="active_canvas('architectural')">  Architectural Model  </button>
-				<button class="btn_aside"onclick="active_canvas('structural')"> Structural Model </button>
-				<button class="btn_aside"onclick="active_canvas('results')"> Final Results </button>
+				<button class="btn_aside"onclick="active_canvas('architettonico')">  Architectural Model  </button>
+				<button class="btn_aside"onclick="active_canvas('strutturale')"> Structural Model </button>
+				<button class="btn_aside"onclick="active_canvas('risultati')"> Final Results </button>
 			
 			
 			</aside>
@@ -58,38 +58,99 @@
 				
 				<div id="bibliography" class="pannello"> 
 
+					<aside id="aside2" class="aside_secondary">
+					<button id="btn_aux1" class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">Census Form</a></button>
+					
+					<button id="btn_aux12" class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">Risks</a></button>
+
+					
+
+					<button id="btn_aux3" class="btn_aux" onclick="active_aux('immagini')">Immagini</button> 
+				</aside> 
+
+				<div id="body2" class="body_secondary">
+					 
+			 		<div id="immagini" class="body_third">
+ 						
+						<div class="foto_container">
+							<img class="immagini" src="img\ISPEZIONI\Appoggi\foto1.png">
+						</div>
+
+						 <div class="foto_button">
+							<button class="btn_arrows">Back</button>
+							<button class="btn_arrows">Forward</button> 
+						</div>   
+ 					 
+					</div>
+
+
+				</div>
+
+
+
+
+
+
 				</div>
 					
 				 
 				<div id="cloudofpoints"class="pannello">
 					
+					<aside id="aside3" class="aside_secondary">
+
+					<button id="btn_aux4" class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">bla bla</a></button>
+					 
+					<button id="btn_aux5" class="btn_aux" onclick="active_aux1('immagini2')">Immagini</button> 
+					</aside> 
+
+				 	<div id="body3" class="body_secondary">
+						 
+							<div id="immagini2" class="body_third">
+
+								<div class="foto_container">
+									<img class="immagini" src="img\ISPEZIONI\Appoggi\foto1.png">
+								</div>
+
+							 	<div class="foto_button">
+									<button class="btn_arrows">Back</button>
+									<button class="btn_arrows">Forward</button>
+								</div> 
+   							</div>
+   						
+					</div>   
+
+
+
+
+
+
 				</div>
 
 
 
 				<div id="inspections"class="pannello">
-					<div id="aside2">
-						<button id="btn_aux1" class="btn_aux" onclick="active_aux('supports')"> Supports</button>
-						<button id="btn_aux2" class="btn_aux"onclick="active_aux('movementjoint')"> Movement Joint</button>
+					<div id="aside4">
+						<button id="btn_aux6" class="btn_aux" onclick="active_aux2('supports')"> Supports</button>
+						<button id="btn_aux7" class="btn_aux"onclick="active_aux2('movementjoint')"> Movement Joint</button>
 
-     					<button id="btn_aux3" class="btn_aux"onclick="active_aux('slab')"> Slab/Road Surface</button>
+     					<button id="btn_aux8" class="btn_aux"onclick="active_aux2('slab')"> Slab/Road Surface</button>
 
-						<button id="btn_aux4" class="btn_aux"onclick="active_aux('appoggi')"> Abutments</button>
+						<button id="btn_aux9" class="btn_aux"onclick="active_aux2('abutments')"> Abutments</button>
 	
-						<button id="btn_aux5" class="btn_aux"onclick="active_aux('appoggi')"> Beams</button>
+						<button id="btn_aux10" class="btn_aux"onclick="active_aux2('beams')"> Beams</button>
 
-						<button id="btn_aux6" class="btn_aux"onclick="active_aux('appoggi')">Traverses</button>
+						<button id="btn_aux11"  class="btn_aux"onclick="active_aux2('traverses')">Traverses</button>
 
-						<button id="btn_aux7" class="btn_aux"><a href="img\ISPEZIONI\schede di difettosità.pdf" target="_blank">Schede di Difettosità</a></button>
+						<button id="btn_aux12" class="btn_aux"><a href="img\ISPEZIONI\schede di difettosità.pdf" target="_blank">Schede di Difettosità</a></button>
 
 
 						
 						</div>
-					<div id="body2">
+					<div id="body4">
 
-						<div id="supports" class="body2"> 
+						<div id="supports" class="body_secondary"> 
 							<div class="foto_container">
-								<img  class="immagini "src="img/ISPEZIONI/Appoggi/Appoggi ad Attrito.jpg">
+								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
 							</div>
 							<div class="foto_button">
 								<button class ="btn_arrows">back</button>
@@ -99,24 +160,57 @@
 							
 						</div>
 
-						<div id="movementjoint" class="body2"> 
+						<div id="movementjoint" class="body_secondary"> 
 							<div class="foto_container">
-								hola
+								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
 							</div>
 							<div class="foto_button">
-								adios
+								<button class ="btn_arrows">back</button>
+								<button class ="btn_arrows">forward</button>
 							</div>
 						</div>
-						<div id="slab" class="body2"> 
+						<div id="slab" class="body_secondary"> 
 							<div class="foto_container">
-								hola
+								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
 							</div>
 							<div class="foto_button">
-								adios
+								<button class ="btn_arrows">back</button>
+								<button class ="btn_arrows">forward</button>
+							</div>
+							 
+						</div>
+
+						<div id="abutments" class="body_secondary"> 
+							<div class="foto_container">
+								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+							</div>
+							<div class="foto_button">
+								<button class ="btn_arrows">back</button>
+								<button class ="btn_arrows">forward</button>
+							</div>
+							 
+						</div>
+
+						<div id="beams" class="body_secondary"> 
+							<div class="foto_container">
+								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+							</div>
+							<div class="foto_button">
+								<button class ="btn_arrows">back</button>
+								<button class ="btn_arrows">forward</button>
 							</div>
 						</div>
 						
-
+						<div id="traverses" class="body_secondary"> 
+							<div class="foto_container">
+								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+							</div>
+							<div class="foto_button">
+								<button class ="btn_arrows">back</button>
+								<button class ="btn_arrows">forward</button>
+							</div>
+						</div>
+						
 
 
 
@@ -128,17 +222,23 @@
 				
 				
 				
-				<div id="architettonico"class="pannello">
+				 
+
+
+				<iframe title="Report Section"  id="architettonico" class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiMWQyMTVhZTItZDMyYy00NjVmLTkwOTYtMTFhZTQyZDY5ZTA0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+
+				<div >
 					
 				</div>
 
-				<div id="strutturale"class="pannello">
-					
-				</div>
+				<iframe title="Modello Strutturale" id="strutturale"class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiYThmMmE3MjItMzkxMi00N2ZlLTg2YzMtZWVlZTMzYzQ4MmM4IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
-				<div id="risultati"class="pannello">
-					
-				</div>
+
+
+
+
+
+				<iframe title="Report Section" id="risultati"class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiYWY5MzRlZTEtMGRjNi00NjkwLWFmODktYjI5NWEwOWYwZDYzIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 			</content>
@@ -160,7 +260,7 @@
 			
 			<h2 id="titolo"> Carlo Ciardella M56001025
 			</h2>
-			<!-- <img class="logo_inv1"src="img/ministero.png">  -->
+			<img class="logo_inv1"src="img/ministero.png"> 
 			
 		</footer>
 		<script src="scripts.js"></script>
