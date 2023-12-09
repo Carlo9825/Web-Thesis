@@ -58,64 +58,91 @@
 				
 				<div id="bibliography" class="pannello"> 
 
-					<aside id="aside2" class="aside_secondary">
-					<button id="btn_aux1" class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">Census Form</a></button>
+					<aside id="aside2" class="aside_secondary ">
+						
+						
+
+						<button id="btn_bib1" class="btn_aux " onclick="aprirePDF('pdf_biblio','object_biblio',path_biblio,biblio_pdf,0)">Census Form</button>
 					
-					<button id="btn_aux12" class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">Risks</a></button>
+						
 
+						<button id="btn_bib2" class="btn_aux" onclick="aprirePDF('pdf_biblio','object_biblio',path_biblio,biblio_pdf,1)">Risks</button>	
 					
+						<button id="btn_bib3" class="btn_aux" onclick="active_aux('body2','immagini_biblio')">Photos</button> 
+					</aside> 
 
-					<button id="btn_aux3" class="btn_aux" onclick="active_aux('immagini')">Immagini</button> 
-				</aside> 
+					<div id="body2" class="body_secondary">
 
-				<div id="body2" class="body_secondary">
+						<div id="pdf_biblio" class="body_third lector ">
+							<div class="lector_header">
+								<button class="cerrarDocumento">&#10006;</button>
+							</div>
+							<div class="lector_content">
+								<embed id ="object_biblio" src="" width="100%" height="100%">
+            						<!-- <p>The PDF visor is not compatible with your browser. You can download the visor   <a href="PDF/Piano di manutenzione We BRIDGE.pdf">here</a>.</p> -->
+        						</embed> 							
+							</div>
+						</div>
 					 
-			 		<div id="immagini" class="body_third">
+			 			<div id="immagini_biblio" class="body_third">
  						
-						<div class="foto_container">
-							<img class="immagini" src="img\ISPEZIONI\Appoggi\foto1.png">
+							<div class="foto_container">
+								<img id="img_biblio" class="immagini_biblio" src="img/bibliografia/foto1.png">
+							</div>
+
+							 <div class="foto_button">
+								<button class="btn_arrows" onclick="back('img_biblio',path_biblio,biblio_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('img_biblio',path_biblio,biblio_img)">Forward</button> 
+							</div>   
+ 					 
 						</div>
 
-						 <div class="foto_button">
-							<button class="btn_arrows">Back</button>
-							<button class="btn_arrows">Forward</button> 
-						</div>   
- 					 
+
 					</div>
-
-
-				</div>
-
-
-
-
-
 
 				</div>
 					
 				 
-				<div id="cloudofpoints"class="pannello">
+				<div id="cloudofpoints"class="pannello ">
 					
-					<aside id="aside3" class="aside_secondary">
+					<aside id="aside3" class="aside_secondary ">
 
-					<button id="btn_aux4" class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">bla bla</a></button>
+						<!-- <button  class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">Document</a></button> -->
+
+						<button id="cloud_aux1" class="btn_aux" onclick="aprirePDF('pdf_cloud','object_cloud',path_cloud,cloud_pdf,0)">Document</button>
+
+
 					 
-					<button id="btn_aux5" class="btn_aux" onclick="active_aux1('immagini2')">Immagini</button> 
+						<button id="cloud_aux2" class="btn_aux" onclick="active_aux('body3','immagini_cloud')">Photos</button> 
 					</aside> 
 
-				 	<div id="body3" class="body_secondary">
-						 
-							<div id="immagini2" class="body_third">
+				 	<div id="body3" class="body_secondary   ">
+						
+						<div id="pdf_cloud" class="body_third lector">
+							 
+							<div class="lector_header">
+								<button class="cerrarDocumento">&#10006;</button>
+							</div>
+							<div class="lector_content">
+								<embed id ="object_cloud" src="" width="100%" height="100%">
+            						 <!-- <p>The PDF visor is not compatible with your browser. You can download the visor   <a href="PDF/Piano di manutenzione We BRIDGE.pdf">here</a>.</p>   -->
+        						</embed> 							
+							</div>
+						</div>
 
-								<div class="foto_container">
-									<img class="immagini" src="img\ISPEZIONI\Appoggi\foto1.png">
-								</div>
 
-							 	<div class="foto_button">
-									<button class="btn_arrows">Back</button>
-									<button class="btn_arrows">Forward</button>
-								</div> 
-   							</div>
+
+						<div id="immagini_cloud" class="body_third">
+
+							<div class="foto_container">
+								<img id="img_cloud"class="immagini_cloud" src="img\cloud\foto1.jpg">
+							</div>
+
+							 <div class="foto_button">
+								<button class="btn_arrows" onclick="back('img_cloud',path_cloud,cloud_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('img_cloud',path_cloud,cloud_img)">Forward</button> 
+							</div> 
+   						</div>
    						
 					</div>   
 
@@ -129,94 +156,111 @@
 
 
 				<div id="inspections"class="pannello">
-					<div id="aside4">
-						<button id="btn_aux6" class="btn_aux" onclick="active_aux2('supports')"> Supports</button>
-						<button id="btn_aux7" class="btn_aux"onclick="active_aux2('movementjoint')"> Movement Joint</button>
 
-     					<button id="btn_aux8" class="btn_aux"onclick="active_aux2('slab')"> Slab/Road Surface</button>
+					<div id="aside4" class="aside_secondary">
 
-						<button id="btn_aux9" class="btn_aux"onclick="active_aux2('abutments')"> Abutments</button>
+						<button id="btn_insp1" class="btn_aux" onclick="active_aux('body4','supports')"> Supports</button>
+						<button id="btn_insp2" class="btn_aux"onclick="active_aux('body4','movementjoint')"> Movement Joint</button>
+
+     					<button id="btn_insp3" class="btn_aux"onclick="active_aux('body4','slab')"> Slab/Road Surface</button>
+
+						<button id="btn_insp4" class="btn_aux"onclick="active_aux('body4','abutments')"> Abutments</button>
 	
-						<button id="btn_aux10" class="btn_aux"onclick="active_aux2('beams')"> Beams</button>
+						<button id="btn_insp5" class="btn_aux"onclick="active_aux('body4','beams')"> Beams</button>
 
-						<button id="btn_aux11"  class="btn_aux"onclick="active_aux2('traverses')">Traverses</button>
+						<button id="btn_insp6"  class="btn_aux"onclick="active_aux('body4','traverses')">Traverses</button>
 
-						<button id="btn_aux12" class="btn_aux"><a href="img\ISPEZIONI\schede di difettosità.pdf" target="_blank">Schede di Difettosità</a></button>
+						
+						<button id="btn_insp7" class="btn_aux " onclick="aprirePDF('pdf_ispezioni','object_ispezioni',path_ispezioni,ispezioni_pdf,0)">Schede di Difettosità</button>
+					
 
 
 						
-						</div>
-					<div id="body4">
+					</div>
 
-						<div id="supports" class="body_secondary"> 
+					<div id="body4" class="body_secondary">
+
+						<div id="supports" class="body_third"> 
 							<div class="foto_container">
-								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+								<img id="immagini_supports" class="immagini_inspection "src="img/ISPEZIONI/Appoggi/foto1.png">
 							</div>
 							<div class="foto_button">
-								<button class ="btn_arrows">back</button>
-								<button class ="btn_arrows">forward</button>
+								<button class="btn_arrows" onclick="back('immagini_supports',path_ispezioni,appoggi_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_supports',path_ispezioni,appoggi_img)">Forward</button> 
 							</div>
-							
-							
+											
 						</div>
 
-						<div id="movementjoint" class="body_secondary"> 
+						<div id="movementjoint" class="body_third"> 
 							<div class="foto_container">
-								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+								<img  id="immagini_joints" class="immagini_inspection "src="img/ISPEZIONI/Giuti/Foto giuto.png">
 							</div>
 							<div class="foto_button">
-								<button class ="btn_arrows">back</button>
-								<button class ="btn_arrows">forward</button>
+								<button class="btn_arrows" onclick="back('immagini_joints',path_ispezioni,giuti_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_joints',path_ispezioni,giuti_img)">Forward</button> 
 							</div>
 						</div>
-						<div id="slab" class="body_secondary"> 
+
+
+						<div id="slab" class="body_third"> 
 							<div class="foto_container">
-								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+								<img  id="immagini_slab" class="immagini_inspection "src="img/ISPEZIONI/Soletta-Pavimentazione stradale/foto1.png">
 							</div>
 							<div class="foto_button">
-								<button class ="btn_arrows">back</button>
-								<button class ="btn_arrows">forward</button>
+								<button class="btn_arrows" onclick="back('immagini_slab',path_ispezioni,solleta_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_slab',path_ispezioni,solleta_img)">Forward</button> 
 							</div>
 							 
 						</div>
 
-						<div id="abutments" class="body_secondary"> 
+						<div id="abutments" class="body_third"> 
 							<div class="foto_container">
-								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+								<img  id="immagini_abutments" class="immagini_inspection" src="img/ISPEZIONI/Spalle/foto1.png">
 							</div>
 							<div class="foto_button">
-								<button class ="btn_arrows">back</button>
-								<button class ="btn_arrows">forward</button>
+								<button class="btn_arrows" onclick="back('immagini_abutments',path_ispezioni,spalle_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_abutments',path_ispezioni,spalle_img)">Forward</button> 
 							</div>
 							 
 						</div>
 
-						<div id="beams" class="body_secondary"> 
+						<div id="beams" class="body_third"> 
 							<div class="foto_container">
-								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+								<img  id="immagini_beams" class="immagini_inspection" src="img/ISPEZIONI/Travi/foto1.jpg">
 							</div>
 							<div class="foto_button">
-								<button class ="btn_arrows">back</button>
-								<button class ="btn_arrows">forward</button>
+								<button class="btn_arrows" onclick="back('immagini_beams',path_ispezioni,travi_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_beams',path_ispezioni,travi_img)">Forward</button> 
 							</div>
 						</div>
 						
-						<div id="traverses" class="body_secondary"> 
+						<div id="traverses" class="body_third"> 
 							<div class="foto_container">
-								<img  class="immagini "src="img\ISPEZIONI\Appoggi\foto1.png">
+								<img  id="immagini_traverses" class="immagini_inspection" src="img/ISPEZIONI/Traversi/foto1.png">
 							</div>
 							<div class="foto_button">
-								<button class ="btn_arrows">back</button>
-								<button class ="btn_arrows">forward</button>
+								<button class="btn_arrows" onclick="back('immagini_traverses',path_ispezioni,traversi_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_traverses',path_ispezioni,traversi_img)">Forward</button> 
 							</div>
 						</div>
-						
-
-
-
-
+					
+						<div id="pdf_ispezioni" class="body_third lector">
+							 
+							<div class="lector_header">
+								<button class="cerrarDocumento">&#10006;</button>
+							</div>
+							<div class="lector_content">
+								<embed id ="object_ispezioni" src="" width="100%" height="100%">
+            						 <!-- <p>The PDF visor is not compatible with your browser. You can download the visor   <a href="PDF/Piano di manutenzione We BRIDGE.pdf">here</a>.</p>   -->
+        						</embed> 							
+							</div>
+						 
+						</div>
 
 					</div>
+
+
+						
 
 				</div>
 				
@@ -242,6 +286,7 @@
 
 
 			</content>
+			
 			<div id="images_container">
 				<img src="img/archicad.png">
 				<img src="img/revit.jpg">

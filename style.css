@@ -259,7 +259,7 @@ footer{
 .foto_container{
 	width: 100%;
 	height: 100%;
-	background: purple;
+	
 	display:grid;
 	place-items: center;
 
@@ -268,7 +268,6 @@ footer{
 .foto_button{
 	width: 100%;
 	height: 100%;
-	background: skyblue;
 	display:flex;
 	flex-direction:row;
 	justify-content: center;
@@ -278,8 +277,20 @@ footer{
 
 	}
 
+.immagini_biblio{
+		width:800px;
+		height: 400px;
 
-.immagini{
+		}
+
+.immagini_cloud{
+		width:1000px;
+		height: 600px;
+
+		}
+
+
+.immagini_inspection {
 		width:600px;
 		height: 400px;
 
@@ -303,7 +314,7 @@ footer{
 
 
 
-	#bibliography, #cloudofpoints{
+	#bibliography, #cloudofpoints, #inspections{
 	grid-template-columns: 10% 1fr;
 
 
@@ -369,29 +380,61 @@ footer{
 
 
 .body_third{
-	display: grid;
+
+	display: none;
 	place-items: center;
 	grid-template-rows: 80% 1fr;
 
 	}
 
 
-.foto_container{
+
+
+
+	
+
+
+.prueba{
+	/*width: 100%;
+	height: 100%;*/
+	background: yellowgreen;
+}
+
+
+.lector{
 	width: 100%;
 	height: 100%;
-	display: grid;
-	place-items: center;
+	background: #999999;
+	grid-template-rows: 5% 1fr;
+}
 
 
-	}
 
-.foto_button{
-	width: 100%;
+.lector_header{
+	width:100%;
 	height: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row-reverse;
+	 
+}
 
 
-	}
+.lector_content{
+	width:100%;
+	height: 100%;
+	 
+}
+
+
+.cerrarDocumento {
+    font-size: 20px; /* Tamaño del carácter */
+    font-weight: bold; /* Puedes ajustar según tus preferencias */
+    background: none;
+    border: none;
+    color: #333; /* Color del carácter */
+    cursor: pointer;
+}
+
+.cerrarDocumento:hover {
+    color: #ff0000; /* Color al pasar el mouse sobre el botón */
+}
