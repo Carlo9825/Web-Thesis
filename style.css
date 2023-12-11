@@ -278,8 +278,26 @@ footer{
 
 	}
 
+<<<<<<< Updated upstream
 
 .immagini{
+=======
+.immagini_biblio{
+		width:600px;
+		height: 500px;
+
+		}
+
+.immagini_cloud{
+		
+		height: 60vh;
+		aspect-ratio: 2/2.6;
+
+		}
+
+
+.immagini_inspection {
+>>>>>>> Stashed changes
 		width:600px;
 		height: 400px;
 

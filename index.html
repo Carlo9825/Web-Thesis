@@ -44,11 +44,11 @@
 		<div id="canvas">
 
 			<aside>
-				<button id="btn1" class="btn_aside" onclick="active_canvas('bibliography')"> Bibliography </button>
-				<button class="btn_aside"onclick="active_canvas('cloudofpoints')"> Cloud of Points </button>
-				<button class="btn_aside"onclick="active_canvas('inspections')"> Inspections </button>
-				<button class="btn_aside"onclick="active_canvas('architettonico')">  Architectural Model  </button>
-				<button class="btn_aside"onclick="active_canvas('strutturale')"> Structural Model </button>
+				<button id="btn1" class="btn_aside" onclick="active_canvas('bibliography','body2')"> Bibliography </button>
+				<button class="btn_aside"onclick="active_canvas('cloudofpoints','body3')"> Cloud of Points </button>
+				<button class="btn_aside"onclick="active_canvas('inspections','body4')"> Inspections </button>
+				<button class="btn_aside"onclick="active_canvas('architettonico','niente')">  Architectural Model  </button>
+				<button class="btn_aside"onclick="active_canvas('strutturale','niente')"> Structural Model </button>
 				<button class="btn_aside"onclick="active_canvas('risultati')"> Final Results </button>
 			
 			
@@ -96,13 +96,22 @@
 				 
 				<div id="cloudofpoints"class="pannello">
 					
+<<<<<<< Updated upstream
 					<aside id="aside3" class="aside_secondary">
+=======
+					<aside id="aside3" class="aside_secondary ">
+
+						 <button  class="btn_aux "><a href="https://experience.arcgis.com/experience/5ee5d550d2134cc2973d1878438e6c74/page/P%C3%A1gina/?data_id=dataSource_1-187a4ff90ab-layer-66-1878b3fdea7-layer-62%3A69%2CdataSource_5-18820c18a49-layer-86%3A11&dlg=Descargas" target="_blank" class="btn_type_a">GEOPORTAL</a></button>
+
+						
+>>>>>>> Stashed changes
 
 					<button id="btn_aux4" class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">bla bla</a></button>
 					 
 					<button id="btn_aux5" class="btn_aux" onclick="active_aux1('immagini2')">Immagini</button> 
 					</aside> 
 
+<<<<<<< Updated upstream
 				 	<div id="body3" class="body_secondary">
 						 
 							<div id="immagini2" class="body_third">
@@ -116,6 +125,23 @@
 									<button class="btn_arrows">Forward</button>
 								</div> 
    							</div>
+=======
+				 	<div id="body3" class="body_secondary   ">
+						
+					
+
+						<div id="immagini_cloud" class="body_third">
+
+							<div class="foto_container">
+								<img id="img_cloud"class="immagini_cloud" src="img\cloud\foto1.webp">
+							</div>
+
+							 <div class="foto_button">
+								<button class="btn_arrows" onclick="back('img_cloud',path_cloud,cloud_img)">Back</button>
+								<button class="btn_arrows" onclick="forward('img_cloud',path_cloud,cloud_img)">Forward</button> 
+							</div> 
+   						</div>
+>>>>>>> Stashed changes
    						
 					</div>   
 
