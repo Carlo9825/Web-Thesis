@@ -210,29 +210,21 @@ footer{
 
 
 #body2{
-	background: white;
+	 
 	height: 100%;
 	
 
 	}
 
-#supports{
+#supports,#movementjoint,#slab,#abutments,#beams,#traverses{
 	
 	height: 100%;
 	display: none;
 	}
 
-#movementjointi{
-	background: yellowgreen;
-	height: 100%;
-	display: none;
-	}
 
-#slab{
-	background:lightyellow;
-	height: 100%;
-	display: none;
-	}
+
+
 
 .body2{
 	display: grid;
@@ -284,8 +276,9 @@ footer{
 		}
 
 .immagini_cloud{
-		width:1000px;
-		height: 600px;
+		
+		height: 60vh;
+		aspect-ratio: 2/2.66;
 
 		}
 
@@ -437,4 +430,12 @@ footer{
 
 .cerrarDocumento:hover {
     color: #ff0000; /* Color al pasar el mouse sobre el botón */
+}
+
+
+.foto_texto{
+	width: 50%;
+	border: 1px solid black;
+	border-radius: 4px;
+	background: lightgrey;
 }

@@ -10,7 +10,13 @@ const biblio_pdf = ["3 SCHEDA CENSIMENTO O'DONNELL.pdf","5 SCHEDA CENSIMENTO RIS
 
 // 1.b photos
 
-const biblio_img = ["foto1.png","foto2.png"]
+const biblio_img = ["foto1.png","foto2.png","foto3.png"]
+
+const biblio_text_array =[
+    "Typical cross section of presstressed T-beams deck",
+    "Typical  lateral elevation of only one span T-beam bridge",
+    "Maintenance strategy scheme"
+    ]
 
 
 //2. Cloudpoints
@@ -22,7 +28,7 @@ let path_cloud ="img/cloud/"
 const cloud_pdf = ["Piano di manutenzione We BRIDGE.pdf"]
 
 // 2.b photos
-const cloud_img = ["foto1.jpg","foto2.jpg","foto3.jpg","foto4.png"]
+const cloud_img = ["foto1.webp","foto2.jpg","foto3.jpg","foto4.jpg"]
 
 
 
@@ -85,17 +91,54 @@ const travi_img = ["Travi/foto1.jpg",
     ]
 
 
+// 4 sfondo
+
+let path_sfondo ="img/sfondo/"
 
 
 
+const sfondo_img = ["foto1.jpg","foto2.png","foto3.png"]
 
 
 
-function active_canvas  (ide) {
+function cambiar_sfondo_body_secondary(arg ){
+    let aux;
+
+    if (arg === 'body2') {
+        aux = sfondo_img[0];
+    } else if (arg === 'body3') {
+        aux = sfondo_img[1];
+    } else if (arg === 'body4') {
+        aux = sfondo_img[2];
+    }
+
+    let path_sfondo1 = path_sfondo + aux;
+    const elemento = document.getElementById(arg);
+     
+    elemento.style.backgroundImage = 'url('+path_sfondo1+')';
+    elemento.style.backgroundSize = 'cover';
+}
+
+function quitar_sfondo_body_secondary(arg ){
+     
+    const content = document.getElementById(arg);
+     
+    content.style.background = 'white';
+     
+}
+
+
+function active_canvas  (ide,arg ) {
     
-    // first we remove the image as background
+// first we remove the image as background
     const content = document.getElementById("contnt");
     content.style.background ="white"
+
+
+
+
+
+   
 
     // second we ensure we hide all childrens of #contnt father
     var padre = document.getElementById("contnt");
@@ -121,8 +164,30 @@ function active_canvas  (ide) {
 
     var elemento = document.getElementById(ide);
     elemento.style.display="grid"
+    cambiar_sfondo_body_secondary(arg)
 //end of function    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function active_aux (father,ide) {
     // First we select the father element (those with class body_secondary)
@@ -143,51 +208,53 @@ function active_aux (father,ide) {
     var elemento = document.getElementById(ide);
     elemento.style.display="grid"
 
+    quitar_sfondo_body_secondary(father )
+
 //end of function   
 }
 
 
 
 
-function active_aux1  (ide) {
-    var padre = document.getElementById("body3");
-    var elementosHijosDiv = padre.children;
+// function active_aux1  (ide) {
+//     var padre = document.getElementById("body3");
+//     var elementosHijosDiv = padre.children;
 
-    for (var i = 0; i < elementosHijosDiv.length; i++) {
-           elementosHijosDiv[i].style.display = "none";
+//     for (var i = 0; i < elementosHijosDiv.length; i++) {
+//            elementosHijosDiv[i].style.display = "none";
            
-    }
-    const elementos_bodythird = document.querySelectorAll(".body_third");
+//     }
+//     const elementos_bodythird = document.querySelectorAll(".body_third");
 
-    for (var j = 0; j < elementos_bodythird.length; j++) {
-           elementos_bodythird[j].style.display = "none";
+//     for (var j = 0; j < elementos_bodythird.length; j++) {
+//            elementos_bodythird[j].style.display = "none";
            
-    }
-    var elemento = document.getElementById(ide);
-    elemento.style.display="grid"
+//     }
+//     var elemento = document.getElementById(ide);
+//     elemento.style.display="grid"
     
-}
+// }
 
 
-function active_aux2  (ide) {
-    var padre = document.getElementById("body4");
-    var elementosHijosDiv = padre.children;
+// function active_aux2  (ide) {
+//     var padre = document.getElementById("body4");
+//     var elementosHijosDiv = padre.children;
 
-    for (var i = 0; i < elementosHijosDiv.length; i++) {
-           elementosHijosDiv[i].style.display = "none";
+//     for (var i = 0; i < elementosHijosDiv.length; i++) {
+//            elementosHijosDiv[i].style.display = "none";
            
-    }
+//     }
 
-    const elementos_bodythird = document.querySelectorAll(".body_third");
+//     const elementos_bodythird = document.querySelectorAll(".body_third");
 
-    for (var j = 0; j < elementos_bodythird.length; j++) {
-           elementos_bodythird[j].style.display = "none";
+//     for (var j = 0; j < elementos_bodythird.length; j++) {
+//            elementos_bodythird[j].style.display = "none";
            
-    }
-    var elemento = document.getElementById(ide);
-    elemento.style.display="grid"
+//     }
+//     var elemento = document.getElementById(ide);
+//     elemento.style.display="grid"
     
-}
+// }
 
 
 
@@ -208,8 +275,8 @@ function aprirePDF(id1,id2,path,vector,cont){
    
     
     embed.src = path1;
-    const anchor =embed.querySelector("a");
-    anchor.href = path1;
+    // const anchor =embed.querySelector("a");
+    // anchor.href = path1;
     console.log(vector[cont]);
     console.log(embed.src)
     
@@ -252,9 +319,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
  let contatore =0;
-function forward(id,path,vector){
+function forward(id,path,vector,id2){
 
     const imagen = document.getElementById(id);
+    const p_text = document.getElementById(id2);
     contatore +=1;
 
     if (contatore >= vector.length) {
@@ -262,13 +330,15 @@ function forward(id,path,vector){
     }
     let path1 = path+vector[contatore];
     imagen.src = path1;
+    p_text.innerText=biblio_text_array[contatore];
 
 }
 
 
 
-function back(id,path,vector){
+function back(id,path,vector,id2){
     const imagen = document.getElementById(id);
+    const p_text = document.getElementById(id2);
     
     contatore -=1;
     if (contatore <  0) {
@@ -276,6 +346,7 @@ function back(id,path,vector){
     }
     let path1 = path+vector[contatore];
     imagen.src = path1;
+    p_text.innerText=biblio_text_array[contatore];
 
    
 

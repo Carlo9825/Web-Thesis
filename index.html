@@ -44,9 +44,9 @@
 		<div id="canvas">
 
 			<aside>
-				<button id="btn1" class="btn_aside" onclick="active_canvas('bibliography')"> Bibliography </button>
-				<button class="btn_aside"onclick="active_canvas('cloudofpoints')"> Cloud of Points </button>
-				<button class="btn_aside"onclick="active_canvas('inspections')"> Inspections </button>
+				<button id="btn1" class="btn_aside" onclick="active_canvas('bibliography','body2' )"> Bibliography </button>
+				<button class="btn_aside"onclick="active_canvas('cloudofpoints','body3')"> Cloud of Points </button>
+				<button class="btn_aside"onclick="active_canvas('inspections','body4')"> Inspections </button>
 				<button class="btn_aside"onclick="active_canvas('architettonico')">  Architectural Model  </button>
 				<button class="btn_aside"onclick="active_canvas('strutturale')"> Structural Model </button>
 				<button class="btn_aside"onclick="active_canvas('risultati')"> Final Results </button>
@@ -79,7 +79,7 @@
 							</div>
 							<div class="lector_content">
 								<embed id ="object_biblio" src="" width="100%" height="100%">
-            						<!-- <p>The PDF visor is not compatible with your browser. You can download the visor   <a href="PDF/Piano di manutenzione We BRIDGE.pdf">here</a>.</p> -->
+            						
         						</embed> 							
 							</div>
 						</div>
@@ -88,11 +88,14 @@
  						
 							<div class="foto_container">
 								<img id="img_biblio" class="immagini_biblio" src="img/bibliografia/foto1.png">
+								<div class="foto_texto">
+									<p id="biblio_texto">Typical cross section of presstressed T-beams deck</p>
+								</div>
 							</div>
 
 							 <div class="foto_button">
-								<button class="btn_arrows" onclick="back('img_biblio',path_biblio,biblio_img)">Back</button>
-								<button class="btn_arrows" onclick="forward('img_biblio',path_biblio,biblio_img)">Forward</button> 
+								<button class="btn_arrows" onclick="back('img_biblio',path_biblio,biblio_img,'biblio_texto')">Back</button>
+								<button class="btn_arrows" onclick="forward('img_biblio',path_biblio,biblio_img,'biblio_texto')">Forward</button> 
 							</div>   
  					 
 						</div>
@@ -107,9 +110,9 @@
 					
 					<aside id="aside3" class="aside_secondary ">
 
-						<!-- <button  class="btn_aux "><a href="PDF/Piano di manutenzione We BRIDGE.pdf" target="_blank" class="btn_type_a">Document</a></button> -->
+						
 
-						<button id="cloud_aux1" class="btn_aux" onclick="aprirePDF('pdf_cloud','object_cloud',path_cloud,cloud_pdf,0)">Document</button>
+						<button id="cloud_aux1" class="btn_aux" ><a href="https://experience.arcgis.com/experience/5ee5d550d2134cc2973d1878438e6c74/page/P%C3%A1gina/?data_id=dataSource_1-187a4ff90ab-layer-66-1878b3fdea7-layer-62%3A69&dlg=Descargas" target="_blank" class="btn_type_a">GEOPORTAL</a></button>
 
 
 					 
@@ -135,7 +138,7 @@
 						<div id="immagini_cloud" class="body_third">
 
 							<div class="foto_container">
-								<img id="img_cloud"class="immagini_cloud" src="img\cloud\foto1.jpg">
+								<img id="img_cloud"class="immagini_cloud" src="img\cloud\foto1.webp">
 							</div>
 
 							 <div class="foto_button">
@@ -200,6 +203,10 @@
 								<button class="btn_arrows" onclick="forward('immagini_joints',path_ispezioni,giuti_img)">Forward</button> 
 							</div>
 						</div>
+
+
+					
+
 
 
 						<div id="slab" class="body_third"> 
@@ -269,21 +276,22 @@
 				 
 
 
-				<iframe title="Report Section"  id="architettonico" class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiMWQyMTVhZTItZDMyYy00NjVmLTkwOTYtMTFhZTQyZDY5ZTA0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				
 
-				<div >
-					
-				</div>
-
-				<iframe title="Modello Strutturale" id="strutturale"class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiYThmMmE3MjItMzkxMi00N2ZlLTg2YzMtZWVlZTMzYzQ4MmM4IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				<iframe title="Modello architettonico" id="architettonico" class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiMWQyMTVhZTItZDMyYy00NjVmLTkwOTYtMTFhZTQyZDY5ZTA0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 
+				
+
+
+				<iframe title="Modello Strutturale" id="strutturale"class="pannello"   src="https://app.powerbi.com/view?r=eyJrIjoiYThmMmE3MjItMzkxMi00N2ZlLTg2YzMtZWVlZTMzYzQ4MmM4IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 
-				<iframe title="Report Section" id="risultati"class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiYWY5MzRlZTEtMGRjNi00NjkwLWFmODktYjI5NWEwOWYwZDYzIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				
 
+				<iframe title="Report Section" id="risultati"class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiODQ4N2Y1M2MtMTVkMC00YjBlLWEyNmEtOWUwM2Y2NDY3ODdmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 			</content>
 			
