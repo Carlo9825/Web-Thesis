@@ -13,9 +13,9 @@ const biblio_pdf = ["3 SCHEDA CENSIMENTO O'DONNELL.pdf","5 SCHEDA CENSIMENTO RIS
 const biblio_img = ["foto1.png","foto2.png","foto3.png"]
 
 const biblio_text_array =[
-    "Typical cross section of presstressed T-beams deck",
-    "Typical  lateral elevation of only one span T-beam bridge",
-    "Maintenance strategy scheme"
+    "Cross Section of the Deck",
+    "North Elevation Original Drawing",
+    "Attention Class"
     ]
 
 
@@ -28,7 +28,7 @@ let path_cloud ="img/cloud/"
 const cloud_pdf = ["Piano di manutenzione We BRIDGE.pdf"]
 
 // 2.b photos
-const cloud_img = ["foto1.webp","foto2.jpg","foto3.jpg","foto4.jpg"]
+const cloud_img = ["foto1.webp","foto1.jpg","foto2.jpg","foto3.jpg","foto4.jpg","foto5.jpg"]
 
 
 
@@ -54,9 +54,8 @@ const solleta_img = ["Soletta-Pavimentazione stradale/foto1.png",
     "Soletta-Pavimentazione stradale/foto5.png",
     "Soletta-Pavimentazione stradale/foto6.png",
     "Soletta-Pavimentazione stradale/foto7.png",
-    "Soletta-Pavimentazione stradale/Rattoppo stradale.jpg",
-    "Soletta-Pavimentazione stradale/Tracce di scolo- Armatura Ossidata.jpg",
-    "Soletta-Pavimentazione stradale/Usura Pavimentazione.jpg",
+    "Soletta-Pavimentazione stradale/foto8.jpg"
+   
     ]
 
 // 3.b.4  photos Spalle
@@ -67,8 +66,7 @@ const spalle_img = ["Spalle/foto1.png",
     "Spalle/foto5.png",
     "Spalle/foto6.png",
     "Spalle/foto7.png",
-    "Spalle/Vespai dx.png",
-    "Spalle/Vespai sx.jpg",
+   
     ]
 
 // 3.b.5  photos Traversi
@@ -81,13 +79,12 @@ const traversi_img = ["Traversi/foto1.png",
 const travi_img = ["Travi/foto1.jpg",
     "Travi/foto2.jpg",
     "Travi/foto3.jpg",
-    "Travi/Tracce_di_scolo.jpg",
-    "Travi/Cls_Dilavato.jpg",
-    "Travi/Fuoriuscita_Barre_di_ancoraggio.png",
-    "Travi/foto1.jpg",
-    "Travi/foto2.jpg",
-    "Travi/foto3.jpg",
-    "Travi/foto1.jpg",
+    "Travi/foto4.png",
+    "Travi/foto5.png",
+    "Travi/foto6.png",
+    "Travi/foto7.png",
+    "Travi/foto9.png",
+    
     ]
 
 
