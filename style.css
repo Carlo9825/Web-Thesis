@@ -47,6 +47,20 @@ header{
 	aspect-ratio: 2/1;
 	
 	}
+
+
+	.logo_inv2{
+	margin: 3px;
+	width: 120px;
+	aspect-ratio: 2/1.1;
+	
+	}
+	.logo_inv3{
+	margin: 3px;
+	width: 120px;
+	aspect-ratio: 2/1;
+	
+	}
 h1#titolo{
 	color: black;
 	font-size: 30px;
