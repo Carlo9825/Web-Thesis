@@ -270,7 +270,7 @@ footer{
 	}
 
 .immagini_biblio{
-		width:800px;
+		width:850px;
 		height: 400px;
 
 		}
@@ -278,7 +278,7 @@ footer{
 .immagini_cloud{
 		
 		height: 70vh;
-		aspect-ratio: 2.3/2.66;
+		aspect-ratio: 2.2/2.7;
 
 		}
 
@@ -435,7 +435,6 @@ footer{
 
 .foto_texto{
 	width: 50%;
-	border: 1px solid black;
-	border-radius: 4px;
-	background: lightgrey;
+	background: white;
+	text-align: center;
 }
