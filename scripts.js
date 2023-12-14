@@ -10,12 +10,17 @@ const biblio_pdf = ["3 SCHEDA CENSIMENTO O'DONNELL.pdf","5 SCHEDA CENSIMENTO RIS
 
 // 1.b photos
 
-const biblio_img = ["foto1.png","foto2.png","foto3.png"]
+const biblio_img = ["foto1.png","foto2.png","foto4.png","foto5.png","foto6.png","foto7.png","foto3.png"]
 
 const biblio_text_array =[
     "Cross Section of the Deck",
     "North Elevation Original Drawing",
-    "Attention Class"
+    "Hazard Class",
+    "Vulnerability Class",
+    "Exposure Class",
+    "Attention Class",
+    "Multilevel approach and relationships between levels of analysis"
+    
     ]
 
 
@@ -28,7 +33,8 @@ let path_cloud ="img/cloud/"
 const cloud_pdf = ["Piano di manutenzione We BRIDGE.pdf"]
 
 // 2.b photos
-const cloud_img = ["foto1.webp","foto1.jpg","foto2.jpg","foto3.jpg","foto4.jpg","foto5.jpg"]
+const cloud_img = ["foto1.webp","foto1.jpg","foto2.jpg","foto3.jpg","foto4.jpg","foto5.jpg","foto6.png"]
+
 
 
 
@@ -94,7 +100,7 @@ let path_sfondo ="img/sfondo/"
 
 
 
-const sfondo_img = ["foto1.jpg","foto2.png","foto3.png"]
+const sfondo_img = ["foto4.png","foto1.jpg","foto3.png"]
 
 
 
