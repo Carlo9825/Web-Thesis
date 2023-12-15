@@ -49,8 +49,26 @@ const ispezioni_pdf = ['schede di difettosità.pdf']
 // 3.b.1  photos appoggi
 const appoggi_img = ["Appoggi/foto1.png","Appoggi/foto2.png","Appoggi/foto3.png","Appoggi/foto4.png"]
 
+const supports_text_array =[
+    "a",
+    "b",
+    "Hazard Class",
+    "Vulnerability Class",
+    
+    ]
+
+
+
 // 3.b.2  photos Giuti
 const giuti_img = ["Giuti/Foto giuto.png","Giuti/foto giunto 2.png"]
+
+const movement_text_array =[
+    "a",
+    "b",
+        ]
+
+
+
 
 // 3.b.3  photos solleta
 const solleta_img = ["Soletta-Pavimentazione stradale/foto1.png",
@@ -64,6 +82,22 @@ const solleta_img = ["Soletta-Pavimentazione stradale/foto1.png",
    
     ]
 
+
+const slab_text_array =[
+    "I",
+    "II",
+    "III",  
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+
+    
+    ]
+
+
+
 // 3.b.4  photos Spalle
 const spalle_img = ["Spalle/foto1.png",
     "Spalle/foto2.png",
@@ -75,11 +109,38 @@ const spalle_img = ["Spalle/foto1.png",
    
     ]
 
+
+const abutments_text_array =[
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",   
+    ]
+
 // 3.b.5  photos Traversi
 const traversi_img = ["Traversi/foto1.png",
     "Traversi/foto2.png",
     "Traversi/foto3.jpg",
     ]
+
+const traversi_text_array =[
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+
+    
+    ]
+
+
 
 // 3.b.6  photos Travi
 const travi_img = ["Travi/foto1.jpg",
@@ -91,6 +152,17 @@ const travi_img = ["Travi/foto1.jpg",
     "Travi/foto7.png",
     "Travi/foto9.png",
     
+    ]
+
+const beams_text_array =[
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",   
     ]
 
 
@@ -130,12 +202,21 @@ function quitar_sfondo_body_secondary(arg ){
      
 }
 
+function apagar_body_third(){
+    const body_Third_Elements =document.getElementsByClassName('body_third');
+      for (var i = 0; i < body_Third_Elements.length; i++) {
+           body_Third_Elements[i].style.display = "none";
+        }
+}
+
+
 
 function active_canvas  (ide,arg ) {
     
 // first we remove the image as background
     const content = document.getElementById("contnt");
     content.style.background ="white"
+    apagar_body_third()
 
 
 
@@ -219,45 +300,6 @@ function active_aux (father,ide) {
 
 
 
-// function active_aux1  (ide) {
-//     var padre = document.getElementById("body3");
-//     var elementosHijosDiv = padre.children;
-
-//     for (var i = 0; i < elementosHijosDiv.length; i++) {
-//            elementosHijosDiv[i].style.display = "none";
-           
-//     }
-//     const elementos_bodythird = document.querySelectorAll(".body_third");
-
-//     for (var j = 0; j < elementos_bodythird.length; j++) {
-//            elementos_bodythird[j].style.display = "none";
-           
-//     }
-//     var elemento = document.getElementById(ide);
-//     elemento.style.display="grid"
-    
-// }
-
-
-// function active_aux2  (ide) {
-//     var padre = document.getElementById("body4");
-//     var elementosHijosDiv = padre.children;
-
-//     for (var i = 0; i < elementosHijosDiv.length; i++) {
-//            elementosHijosDiv[i].style.display = "none";
-           
-//     }
-
-//     const elementos_bodythird = document.querySelectorAll(".body_third");
-
-//     for (var j = 0; j < elementos_bodythird.length; j++) {
-//            elementos_bodythird[j].style.display = "none";
-           
-//     }
-//     var elemento = document.getElementById(ide);
-//     elemento.style.display="grid"
-    
-// }
 
 
 
@@ -278,10 +320,7 @@ function aprirePDF(id1,id2,path,vector,cont){
    
     
     embed.src = path1;
-    // const anchor =embed.querySelector("a");
-    // anchor.href = path1;
-    console.log(vector[cont]);
-    console.log(embed.src)
+   
     
 }
 
@@ -322,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
  let contatore =0;
-function forward(id,path,vector,id2){
+function forward(id,path,vector,id2,vector2){
 
     const imagen = document.getElementById(id);
     const p_text = document.getElementById(id2);
@@ -333,13 +372,13 @@ function forward(id,path,vector,id2){
     }
     let path1 = path+vector[contatore];
     imagen.src = path1;
-    p_text.innerText=biblio_text_array[contatore];
+    p_text.innerText=vector2[contatore];
 
 }
 
 
 
-function back(id,path,vector,id2){
+function back(id,path,vector,id2,vector2){
     const imagen = document.getElementById(id);
     const p_text = document.getElementById(id2);
     
@@ -349,7 +388,7 @@ function back(id,path,vector,id2){
     }
     let path1 = path+vector[contatore];
     imagen.src = path1;
-    p_text.innerText=biblio_text_array[contatore];
+    p_text.innerText=vector2[contatore];
 
    
 

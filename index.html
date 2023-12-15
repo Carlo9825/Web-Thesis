@@ -94,8 +94,8 @@
 							</div>
 
 							 <div class="foto_button">
-								<button class="btn_arrows" onclick="back('img_biblio',path_biblio,biblio_img,'biblio_texto')">Back</button>
-								<button class="btn_arrows" onclick="forward('img_biblio',path_biblio,biblio_img,'biblio_texto')">Forward</button> 
+								<button class="btn_arrows" onclick="back('img_biblio',path_biblio,biblio_img,'biblio_texto',biblio_text_array)">Back</button>
+								<button class="btn_arrows" onclick="forward('img_biblio',path_biblio,biblio_img,'biblio_texto',biblio_text_array)">Forward</button> 
 							</div>   
  					 
 						</div>
@@ -128,7 +128,7 @@
 							</div>
 							<div class="lector_content">
 								<embed id ="object_cloud" src="" width="100%" height="100%">
-            						 <!-- <p>The PDF visor is not compatible with your browser. You can download the visor   <a href="PDF/Piano di manutenzione We BRIDGE.pdf">here</a>.</p>   -->
+            						 
         						</embed> 							
 							</div>
 						</div>
@@ -187,10 +187,14 @@
 						<div id="supports" class="body_third"> 
 							<div class="foto_container">
 								<img id="immagini_supports" class="immagini_inspection "src="img/ISPEZIONI/Appoggi/foto1.png">
+								<!--
+								<div class="foto_texto">
+									<p id="supports_texto">Typical cross section of presstressed T-beams deck</p>
+								 </div> -->
 							</div>
 							<div class="foto_button">
-								<button class="btn_arrows" onclick="back('immagini_supports',path_ispezioni,appoggi_img)">Back</button>
-								<button class="btn_arrows" onclick="forward('immagini_supports',path_ispezioni,appoggi_img)">Forward</button> 
+								<button class="btn_arrows" onclick="back('immagini_supports',path_ispezioni,appoggi_img,'supports_texto',supports_text_array)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_supports',path_ispezioni,appoggi_img,'supports_texto',supports_text_array)">Forward</button> 
 							</div>
 											
 						</div>
@@ -198,10 +202,13 @@
 						<div id="movementjoint" class="body_third"> 
 							<div class="foto_container">
 								<img  id="immagini_joints" class="immagini_inspection "src="img/ISPEZIONI/Giuti/Foto giuto.png">
+								<!-- <div class="foto_texto">
+									<p id="movement_texto">Typical cross section of presstressed T-beams deck</p>
+								</div> -->
 							</div>
 							<div class="foto_button">
-								<button class="btn_arrows" onclick="back('immagini_joints',path_ispezioni,giuti_img)">Back</button>
-								<button class="btn_arrows" onclick="forward('immagini_joints',path_ispezioni,giuti_img)">Forward</button> 
+								<button class="btn_arrows" onclick="back('immagini_joints',path_ispezioni,giuti_img,'movement_texto',movement_text_array)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_joints',path_ispezioni,giuti_img,'movement_texto',movement_text_array)">Forward</button> 
 							</div>
 						</div>
 
@@ -213,10 +220,13 @@
 						<div id="slab" class="body_third"> 
 							<div class="foto_container">
 								<img  id="immagini_slab" class="immagini_inspection "src="img/ISPEZIONI/Soletta-Pavimentazione stradale/foto1.png">
+								<!-- <div class="foto_texto">
+									<p id="slab_texto">Typical cross section of presstressed T-beams deck</p>
+								</div> -->
 							</div>
 							<div class="foto_button">
-								<button class="btn_arrows" onclick="back('immagini_slab',path_ispezioni,solleta_img)">Back</button>
-								<button class="btn_arrows" onclick="forward('immagini_slab',path_ispezioni,solleta_img)">Forward</button> 
+								<button class="btn_arrows" onclick="back('immagini_slab',path_ispezioni,solleta_img,'slab_texto',slab_text_array)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_slab',path_ispezioni,solleta_img,'slab_texto',slab_text_array)">Forward</button> 
 							</div>
 							 
 						</div>
@@ -224,10 +234,13 @@
 						<div id="abutments" class="body_third"> 
 							<div class="foto_container">
 								<img  id="immagini_abutments" class="immagini_inspection" src="img/ISPEZIONI/Spalle/foto1.png">
+								<!-- <div class="foto_texto">
+									<p id="abutments_texto">Typical cross section of presstressed T-beams deck</p>
+								</div> -->
 							</div>
 							<div class="foto_button">
-								<button class="btn_arrows" onclick="back('immagini_abutments',path_ispezioni,spalle_img)">Back</button>
-								<button class="btn_arrows" onclick="forward('immagini_abutments',path_ispezioni,spalle_img)">Forward</button> 
+								<button class="btn_arrows" onclick="back('immagini_abutments',path_ispezioni,spalle_img,'abutments_texto',abutments_text_array)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_abutments',path_ispezioni,spalle_img,'abutments_texto',abutments_text_array)">Forward</button> 
 							</div>
 							 
 						</div>
@@ -235,20 +248,26 @@
 						<div id="beams" class="body_third"> 
 							<div class="foto_container">
 								<img  id="immagini_beams" class="immagini_inspection" src="img/ISPEZIONI/Travi/foto1.jpg">
+								<!-- <div class="foto_texto">
+									<p id="beams_texto">Typical cross section of presstressed T-beams deck</p>
+								</div> -->
 							</div>
 							<div class="foto_button">
-								<button class="btn_arrows" onclick="back('immagini_beams',path_ispezioni,travi_img)">Back</button>
-								<button class="btn_arrows" onclick="forward('immagini_beams',path_ispezioni,travi_img)">Forward</button> 
+								<button class="btn_arrows" onclick="back('immagini_beams',path_ispezioni,travi_img,'beams_texto',beams_text_array)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_beams',path_ispezioni,travi_img,'beams_texto',beams_text_array)">Forward</button> 
 							</div>
 						</div>
 						
 						<div id="traverses" class="body_third"> 
 							<div class="foto_container">
 								<img  id="immagini_traverses" class="immagini_inspection" src="img/ISPEZIONI/Traversi/foto1.png">
+								<!-- <div class="foto_texto">
+									<p id="traverses_texto">Typical cross section of presstressed T-beams deck</p>
+								</div> -->
 							</div>
 							<div class="foto_button">
-								<button class="btn_arrows" onclick="back('immagini_traverses',path_ispezioni,traversi_img)">Back</button>
-								<button class="btn_arrows" onclick="forward('immagini_traverses',path_ispezioni,traversi_img)">Forward</button> 
+								<button class="btn_arrows" onclick="back('immagini_traverses',path_ispezioni,traversi_img,'traverses_texto',traversi_text_array)">Back</button>
+								<button class="btn_arrows" onclick="forward('immagini_traverses',path_ispezioni,traversi_img,'traverses_texto',traversi_text_array)">Forward</button> 
 							</div>
 						</div>
 					
@@ -259,7 +278,7 @@
 							</div>
 							<div class="lector_content">
 								<embed id ="object_ispezioni" src="" width="100%" height="100%">
-            						 <!-- <p>The PDF visor is not compatible with your browser. You can download the visor   <a href="PDF/Piano di manutenzione We BRIDGE.pdf">here</a>.</p>   -->
+            						  
         						</embed> 							
 							</div>
 						 
@@ -279,22 +298,22 @@
 
 				
 
-				<iframe title="Modello architettonico" id="architettonico" class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiMWQyMTVhZTItZDMyYy00NjVmLTkwOTYtMTFhZTQyZDY5ZTA0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				 
 
-
-
-				
-
-
-				<iframe title="Modello Strutturale" id="strutturale"class="pannello"   src="https://app.powerbi.com/view?r=eyJrIjoiYThmMmE3MjItMzkxMi00N2ZlLTg2YzMtZWVlZTMzYzQ4MmM4IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-
-
+				<iframe title="Report Section" id="architettonico" class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiZDhmMzM4YWMtNjg3ZS00N2UyLWIyYTMtYWU3MDQ4YTQwNjdjIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 				
 
+
+
+
+				<iframe title="Report Section" id="strutturale"class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiZGMyNTUwNmMtNTQ2YS00YTQzLWE1NzQtOTFjN2I3NTUxYTUxIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+
 				
 
-				<iframe title="Risultati Defiitivo" id="risultati"class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiODQ4N2Y1M2MtMTVkMC00YjBlLWEyNmEtOWUwM2Y2NDY3ODdmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				
+
+				<iframe title="Report Section" id="risultati"class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiMjkzMzBiMmMtNzNmOC00NGZjLWFjZGEtZWYzYWU2ZWNmOTljIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 			</content>
 			
